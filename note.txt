@@ -1,0 +1,6 @@
+1. 添加文件到Git仓库步骤
+ 1. git add filename # 添加文件
+ 2. git commit -m <message 提交说明信息>
+
+2. Git初始化
+ 进入要初始化的文件夹输入git init
