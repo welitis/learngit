@@ -4,3 +4,11 @@
 
 2. Git初始化
  进入要初始化的文件夹输入git init
+
+3. 查看工作区的状态
+ git status
+
+4. 比较文件与修改前的不同在add之前
+ git diff <filename>
+
+
