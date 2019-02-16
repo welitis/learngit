@@ -54,5 +54,20 @@ git push origin master
 14. 克隆仓库只需要直到仓库的地址,没有用户限制,git支持多种协议，包括https，但通过ssh支持的原生git协议最快
 git clone git@github.com:welitis/<repo name>.git
 
+15. 分支的创建、合并、删除
+查看分支
+git branch
+创建分支
+git branch <branch name>
+切换分支
+git checkout <branch name>
+创建+切换分支
+git checkout -b <branch name>
+合并某分支到当前分支
+git merge <branch name>
+删除分支
+git branch -d <branch name>
+Git鼓励大量用分支 
+
 
 
