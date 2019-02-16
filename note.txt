@@ -44,3 +44,10 @@ git checkout -- <filename>的两个作用
 2. 在工作区对文件作出修改未commit的情况下，可以恢复工作区文件到上一次暂存区的文件状态，比如：在工作区对a文件进行修改并add到暂存区，接着又对a文件修改了，如果此时使用该命令，那么会将文件a恢复至暂存区a文件的状态，如果暂存区没有文件，那就是上一次commit前的add a文件的状态，也就是版本库最新版本中a文件的状态。
 感觉这两个作用原理都是差不多的，都是从暂存库中还原文件，我觉得可以这样理解，第一个作用，删除文件后从版本库中恢复文件，也就是从上次这个文件在的暂存库中恢复该文件，第二个作用也是同理，从上次这个文件在的暂存库中恢复文件到工作区，在文件a修改后，或者已经add后，checkout会找到这个文件上次在暂存库的状态，然后恢复过去。
 
+12. 关联一个远程库,需要先在GitHub创建一个repository
+git remote add origin（远程库的名字） git@server-name:path/repo-name.git
+
+13. 第一次推送master分支的所有内容
+git push -u origin master
+git push origin master
+
