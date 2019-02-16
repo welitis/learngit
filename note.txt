@@ -75,3 +75,9 @@ git创建分支只是多了一个指向该工作区的方向而已，比如当�
 当git无法自动合并分支时，就必须解决冲突，再提交，合并完成
 解决冲突就是把Git合并失败的文件手动挡编辑为我们希望的内容，再提交
 用git log --graph=pretty=oneline --abbrev-commit
+
+git分支合并有普通模式和Fast forward模式
+我觉得还是普通模式好，因为他会在合并时生成一个新的commit,也就是保留了之前的历史状态，将合并后的状态保存为另个新的版本
+git merge dev
+git merge --no-ff -m "<版本说明>" dev
+
