@@ -51,3 +51,8 @@ git remote add origin（远程库的名字） git@server-name:path/repo-name.git
 git push -u origin master
 git push origin master
 
+14. 克隆仓库只需要直到仓库的地址,没有用户限制,git支持多种协议，包括https，但通过ssh支持的原生git协议最快
+git clone git@github.com:welitis/<repo name>.git
+
+
+
