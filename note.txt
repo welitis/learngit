@@ -11,4 +11,13 @@
 4. 比较文件与修改前的不同在add之前
  git diff <filename>
 
+5. 返回其他版本状态
+ git reset --hard <commit_id>(不用写全部，前几个字母就可以)
+
+6. 查看历史版本
+ git log/git log --pretty=oneline
+
+7. 查看历史命令，回到未来
+ git reflog
+
 
