@@ -33,3 +33,10 @@ git checkout -- <filename>
 9. 撤销暂存区的文件
 git reset HEAD <filename>
 
+10. 删除版本库的文件,并且需要提交，创建一个新的版本，也就是删除了文件的版本
+git rm <filename>
+
+11. 恢复工作区删除的文件，只要版本库有备份就可以恢复
+git checkout -- <filename>
+
+
