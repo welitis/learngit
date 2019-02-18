@@ -6,4 +6,4 @@ good good study.
 day day up.
 Creating a new branch is quick and apple.
 today is monday.
-Today is Friday.
+Today is a Friday.
