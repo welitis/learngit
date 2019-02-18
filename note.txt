@@ -89,3 +89,6 @@ git stash drop 删除工作现场
 git stash pop 删除的同时也恢复工作现场
 
 ### 暂存区是公用的，这个分支保存进暂存区，另个分支也能看到，即便是不同的版本
+
+如果要丢弃一个没有被合并过的分支，可以通过git branch -D <name>
+git branch -D <name>
