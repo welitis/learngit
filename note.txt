@@ -81,3 +81,9 @@ git分支合并有普通模式和Fast forward模式
 git merge dev
 git merge --no-ff -m "<版本说明>" dev
 
+16. 保留工作现场，需要先存入暂存区
+git stash 保留当前工作现场
+git stash list 查看保留的工作现场
+git stash apply [<stash@{0}>]恢复工作现场
+git stash drop 删除工作现场
+git stash pop 删除的同时也恢复工作现场
