@@ -81,3 +81,27 @@ git分支合并有普通模式和Fast forward模式
 git merge dev
 git merge --no-ff -m "<版本说明>" dev
 
+16. 保留工作现场，需要先存入暂存区
+git stash 保留当前工作现场
+git stash list 查看保留的工作现场
+git stash apply [<stash@{0}>]恢复工作现场
+git stash drop 删除工作现场
+git stash pop 删除的同时也恢复工作现场
+
+### 暂存区是公用的，这个分支保存进暂存区，另个分支也能看到，即便是不同的版本
+
+如果要丢弃一个没有被合并过的分支，可以通过git branch -D <name>
+git branch -D <name>
+
+查看远程库信息，使用git remote -v
+
+本地新建的分支如果不推送到远程，对其他人就是不可见的。
+
+从本地推送分支，使用git push origin branch-name,如果推送失败，先用git pull抓取远程的新提交，如果有同名文件视图合并，然后再提交推送
+
+
+从本地创建和远程分支对应的分支，使用git checkout -b <branch-name> origin/<branch-name>,本地和远程分支的名称最好一致
+
+建立本地分支和远程分支的关联，使用git branch --set-upstream origin/branch-name <branch-name>
+
+从远程抓取分支，使用pull,如果有冲突，要先处理冲突
